@@ -1,0 +1,22 @@
+header {
+    width: 100%;
+    background-color: transparent;
+    box-shadow: none;
+
+    transition: .5s ease;
+
+    position: fixed;
+    z-index: 999;
+}
+
+.active-header {
+    background-color: $white-normal;
+    box-shadow: 0px 2.309687852859497px 3.623039960861206px 0px #A950C407;
+
+    box-shadow: 0px 6.38599157333374px 10.017241477966309px 0px #A950C40A;
+
+    box-shadow: 0px 15.375007629394531px 24.117658615112305px 0px #A950C40D;
+
+    box-shadow: 0px 51px 80px 0px #A950C414;
+
+}
