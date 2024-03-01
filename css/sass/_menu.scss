@@ -1,21 +1,22 @@
 header {
     width: 100%;
-    background-color: transparent;
-    box-shadow: none;
+    height: 72px;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 
     transition: .5s ease;
 
     position: fixed;
-    z-index: 999;
+    z-index: 800;
 }
 
 .active-header {
-    background-color: $white-normal;
-    box-shadow: 0px 2.309687852859497px 3.623039960861206px 0px #A950C407;
-
-    box-shadow: 0px 6.38599157333374px 10.017241477966309px 0px #A950C40A;
-
-    box-shadow: 0px 15.375007629394531px 24.117658615112305px 0px #A950C40D;
+    background: rgba(255, 255, 255, 0.63);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 
     box-shadow: 0px 51px 80px 0px #A950C414;
 
@@ -40,7 +41,7 @@ header {
     width: 48px;
     height: 48px;
 
-  
+
 
     display: flex;
     justify-content: center;
@@ -167,6 +168,7 @@ header {
 
         width: 0%;
         height: 2px;
+        border-radius: 3px;
 
         background-color: $secondary-normal;
 
@@ -186,12 +188,15 @@ header {
     margin: 0 auto;
     padding: 10px 24px;
 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     display: none;
 
     @include responsive(s) {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+
     }
 }
 
@@ -202,7 +207,7 @@ header {
     position: relative;
     cursor: pointer;
     z-index: 999;
-
+    transition: 0.7s ease;
 
     &::after {
         content: '';
@@ -214,6 +219,7 @@ header {
 
         width: 70%;
         height: 2px;
+        border-radius: 3px;
 
         background-color: $primary-normal;
     }
@@ -242,7 +248,7 @@ header {
     position: relative;
     cursor: pointer;
     z-index: 999;
-   
+
 
 
     &::after {
@@ -278,14 +284,15 @@ header {
 
 .menu-mobile {
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
 
     background-color: $white-normal;
+
     display: flex;
     justify-content: center;
     align-items: center;
 
-
+    position: absolute;
     opacity: 0;
     pointer-events: none;
 
@@ -303,8 +310,25 @@ header {
     list-style: none;
 
     display: flex;
+    align-items: center;
     flex-direction: column;
 
+    svg {
+        width: 36px;
+        height: 36px;
+
+        path {
+            stroke: $gray-5;
+            transition: .5s ease;
+        }
+
+        &:hover {
+
+            path {
+                stroke: $primary-normal;
+            }
+        }
+    }
 }
 
 .nav-link-mobile {
@@ -326,6 +350,7 @@ header {
         width: 0%;
         height: 2px;
         transition: 1s ease;
+        border-radius: 3px;
 
         background-color: $secondary-normal;
     }
@@ -334,7 +359,7 @@ header {
         color: $primary-normal;
 
         &::after {
-            width: 100%;
+            width: 90%;
         }
     }
 }
