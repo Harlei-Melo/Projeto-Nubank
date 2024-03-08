@@ -19,8 +19,8 @@ $height-card: 0.64 * $width-card;
     z-index: -1;
 
     animation: flip-card 12s linear infinite alternate,
-    change-bg-card 12s linear infinite alternate;
-    
+        change-bg-card 12s linear infinite alternate;
+
 }
 
 @keyframes flip-card {
@@ -41,19 +41,22 @@ $height-card: 0.64 * $width-card;
     }
 }
 
-@keyframes change-bg-card{
-    0%,49%{
+@keyframes change-bg-card {
+
+    0%,
+    49% {
         background-image: url("/svg/nubank-premium.svg");
         background-size: cover;
     }
 
-    50%,100%{
+    50%,
+    100% {
         background-image: url("/svg/nubank-premium-verse.svg");
         background-size: cover;
     }
 }
 
-.icon-card-hero{
+.icon-card-hero {
     position: absolute;
     top: -0px;
     left: -30px;
@@ -63,14 +66,14 @@ $height-card: 0.64 * $width-card;
     animation: icons-hero 7s 0.5s ease infinite alternate;
 }
 
-.icon-contactless-hero{
+.icon-contactless-hero {
     position: absolute;
     top: 350px;
     left: 30px;
 
     z-index: 200;
 
-    @include responsive(s){
+    @include responsive(s) {
         top: 320px;
         left: 120px;
     }
@@ -79,14 +82,14 @@ $height-card: 0.64 * $width-card;
     animation: icons-hero 7s 1s ease infinite alternate;
 }
 
-.icon-mobile-hero{
+.icon-mobile-hero {
     position: absolute;
     top: 150px;
     left: -250px;
 
     z-index: 200;
 
-    @include responsive(s){
+    @include responsive(s) {
         top: 350px;
         left: -100px;
     }
@@ -94,88 +97,100 @@ $height-card: 0.64 * $width-card;
     animation: icons-hero 7s 2.5s ease infinite alternate;
 }
 
-@keyframes icons-hero{
-    0%{
-        transform: translate3d(0,0,0);
+@keyframes icons-hero {
+    0% {
+        transform: translate3d(0, 0, 0);
     }
 
-    100%{
-        transform: translate3d(10px,-40px,0);
+    100% {
+        transform: translate3d(10px, -40px, 0);
     }
 }
 
-.bg-home-blur1{
-    transform: translate3d(0,-100px,0);
-}
-.bg-home-blur2{
-    transform: translate3d(0,-150px,0);
+.bg-home-blur1 {
+    transform: translate3d(0, -100px, 0);
 }
 
-.bg-home-rect1{
+.bg-home-blur2 {
+    transform: translate3d(0, -150px, 0);
+}
+
+.bg-home-rect1 {
     animation: bg-home-rect1 3s ease 0s infinite alternate;
 }
-.bg-home-rect2{
+
+.bg-home-rect2 {
     animation: bg-home-rect1 3s ease 0.5s infinite alternate;
 }
-.bg-home-rect3{
+
+.bg-home-rect3 {
     animation: bg-home-rect1 3s ease 1s infinite alternate;
 }
-.bg-home-rect4{
+
+.bg-home-rect4 {
     animation: bg-home-rect1 3s ease 1.5s infinite alternate;
 }
 
-@keyframes bg-home-rect1{
-    0%{
-        transform: translate3d(0,0,0);
+@keyframes bg-home-rect1 {
+    0% {
+        transform: translate3d(0, 0, 0);
     }
-    100%{
-        transform: translate3d(0,30px,0);
+
+    100% {
+        transform: translate3d(0, 30px, 0);
     }
 }
 
 // SECTION PEOPLE
 
-.people1{
+.people1 {
     opacity: 0;
     animation: people 10s ease 0s infinite;
 }
 
-.people2{
+.people2 {
     opacity: 0;
     animation: people 10s ease 5s infinite;
 }
-.people3{
+
+.people3 {
     opacity: 0;
     animation: people 10s ease 2s infinite;
 }
-.people4{
+
+.people4 {
     opacity: 0;
     animation: people 10s ease 7s infinite;
 }
-.people5{
+
+.people5 {
     opacity: 0;
     animation: people 10s ease 3s infinite;
 }
-.people6{
+
+.people6 {
     opacity: 0;
     animation: people 10s ease 8s infinite;
 }
 
-#people2{
-    @include responsive(s){
+#people2 {
+    @include responsive(s) {
         display: none;
     }
 }
 
-@keyframes people{
-    0%{
+@keyframes people {
+    0% {
         opacity: 0;
     }
 
-    20%,50%{
+    20%,
+    50% {
         opacity: 1;
     }
-    70%,100%{
+
+    70%,
+    100% {
         opacity: 0;
     }
 }

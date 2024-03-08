@@ -166,19 +166,19 @@ $container-s:540px;
 .svg-bg-home {
     width: 150%;
 
-    @include responsive(xl){
+    @include responsive(xl) {
         width: 100%;
     }
 }
 
-.list-item{
+.list-item {
     list-style: none;
     position: relative;
 
     padding: 8px 8px 8px 72px;
     margin-bottom: 40px;
 
-    &::after{
+    &::after {
         content: '';
         position: absolute;
         top: 0;
@@ -188,5 +188,64 @@ $container-s:540px;
         width: 64px;
         height: 64px;
 
+    }
+}
+
+//Best
+
+.best {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    border-radius: 50px;
+
+
+    background: rgba(255, 255, 255, 0.55);
+
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    box-shadow: 0px 51px 80px 0px #A950C414;
+
+    @include responsive(s) {
+        flex-direction: column;
+    }
+
+    &::after{
+        content: '';
+
+        display: block;
+        position: absolute;
+
+        top: 0px;
+        left: 50%;
+
+        transform: translate(-50%, -6%);
+
+        width: 124px;
+        height: 32px;
+        background-image: url(/svg/entail.svg);
+        background-repeat: no-repeat;
+    }
+
+}
+
+.best-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    margin: 16px;
+    padding: 8px 0;
+
+    @include responsive(s){
+        justify-content: center;
+        align-items: center;
     }
 }
