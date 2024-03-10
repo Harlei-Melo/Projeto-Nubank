@@ -286,7 +286,9 @@ header {
     width: 100vw;
     height: 120vh;
 
-    background-color: $white-normal;
+    background-image: url('/svg/bg-home.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
 
     display: flex;
     justify-content: center;

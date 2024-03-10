@@ -894,7 +894,9 @@ header {
 .menu-mobile {
   width: 100vw;
   height: 120vh;
-  background-color: #F7F2FA;
+  background-image: url("/svg/bg-home.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
