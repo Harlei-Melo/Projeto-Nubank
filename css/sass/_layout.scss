@@ -202,7 +202,6 @@ $container-s:540px;
 
     border-radius: 50px;
 
-
     background: rgba(255, 255, 255, 0.55);
 
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -247,5 +246,6 @@ $container-s:540px;
     @include responsive(s){
         justify-content: center;
         align-items: center;
+        
     }
 }
