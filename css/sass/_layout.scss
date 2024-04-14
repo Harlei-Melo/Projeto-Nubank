@@ -158,8 +158,10 @@ $container-s:540px;
     display: block;
 }
 
-.nb-25{
-    margin-bottom: -25%;
+.spaccing{
+   @include responsive(s){
+    margin-top: 25px;
+   }
 }
 
 // =====hero======
