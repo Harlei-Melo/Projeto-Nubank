@@ -1,5 +1,5 @@
 .dropshadown {
-    filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+    filter: drop-shadow(0px 16px 42px rgba(169, 80, 196, 0.205));
 }
 
 .bg-icon-check {
@@ -78,7 +78,7 @@
         height: 48px;
         top: 8px;
 
-         
+        filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
 
         cursor: pointer;
     }
@@ -142,4 +142,9 @@
     &:hover {
         transform: scale(1.05);
     }
+}
+
+.icon-networks{
+    max-width: 48px;
+    padding: 8px;
 }

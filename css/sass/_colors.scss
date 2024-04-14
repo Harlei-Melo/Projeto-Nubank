@@ -8,7 +8,7 @@ $primary-light:#5D0875;
 
 $secondary-normal:#4a2653;
 $secondary-dark:#410552;
-$secondary-light:#6b2f7c;
+$secondary-light:#792b8f;
 
 
 //Neutral Colors
@@ -44,3 +44,7 @@ $green-light:#50E170;
 $yellow-normal:#FFCE52;
 $yellow-dark:#D9B043;
 $yellow-light:#FFD76B;
+
+.white{
+    color: $white-light;
+}
