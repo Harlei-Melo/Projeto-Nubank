@@ -37,7 +37,7 @@ $container-s:540px;
     @else if $device==s {
 
         //For resolutions less than 960px
-        @media screen and (max-width: $container-m) {
+        @media screen and (max-width: $container-m)  {
             @content;
         }
     }
@@ -310,4 +310,14 @@ footer {
     border-top: 1px solid $secondary-light;
 }
 
+.store-links{
+    @include responsive(s){
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+
  
+    }
+}
