@@ -147,4 +147,10 @@
 .icon-networks{
     max-width: 48px;
     padding: 8px;
+    stroke-opacity: 0.4;
+    transition: .3s ease;
+
+    &:hover{
+        stroke-opacity: 1;
+    }
 }
